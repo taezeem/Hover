@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Nav List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        nav {
+            filter: drop-shadow(0.25rem 0.25rem 0.5rem #0005);
+            width: 100%;
+            max-width: 14rem;
+            margin: auto;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            background: white;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav li:hover {
+            transform: translateY(-0.25rem);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav li i {
+            margin-right: 0.5rem;
+        }
+        .code-snippet {
+            background: #2d2d2d;
+            color: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 2rem;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+        .code-snippet pre {
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
+    <div class="text-center mb-4">
+        <div class="text-sm text-gray-500">@codewith_muhilan #css</div>
+        <h1 class="text-3xl font-bold">Animated Nav List</h1>
+        <p class="text-lg text-gray-600">with hover Effects</p>
+    </div>
+    <nav>
+        <ul>
+            <li><i class="fab fa-instagram text-pink-500"></i> Instagram</li>
+            <li><i class="fab fa-twitter text-blue-400"></i> Twitter</li>
+            <li><i class="fab fa-youtube text-red-600"></i> YouTube</li>
+            <li><i class="fab fa-linkedin text-blue-700"></i> LinkedIn</li>
+            <li><i class="fab fa-telegram text-blue-500"></i> Telegram</li>
+            <li><i class="fas fa-coffee text-yellow-600"></i> Buy me a Coffee</li>
+        </ul>
+    </nav>
+    <div class="code-snippet">
+        <pre>
+            <code>
+nav {
+    filter: drop-shadow(0.25rem 0.25rem 0.5rem #0005);
+    width: 100%;
+    max-width: 14rem;
+}
+@media (prefers-reduced-motion) {
+    nav * {
+        transition-duration: 0s !important;
+        animation-duration: 0s !important;
+    }
+}
+            </code>
+        </pre>
+    </div>
+    <div class="text-center mt-4">
+        <p class="text-sm text-gray-700">"Animated Nav List" is a 3D hover-effect navigation menu with smooth transitions and responsive design.</p>
+        <p class="text-sm text-gray-700">@codewith_muhilan</p>
+        <p class="text-sm text-gray-700">Free code link in Bio <i class="fas fa-hand-point-up"></i></p>
+    </div>
+</body>
+</html>
